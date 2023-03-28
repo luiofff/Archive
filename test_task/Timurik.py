@@ -4,7 +4,7 @@ def is_palindrome(n):
     else: 
         return False
 x=str(input('Input: x='))
-x=x.replace(' ','') #убирает пробельчики для корректного вывода
+x=x.replace(' ','') #ubiraem probelchiki dlya coorectnogo vivoda
 print('Output: ',is_palindrome(x))
 if (is_palindrome(x)):
     print(x,'reads as', x[::-1],'from left to right and from right to left')
