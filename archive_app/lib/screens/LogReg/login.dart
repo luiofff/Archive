@@ -28,7 +28,7 @@ class Login extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 60,
                         color: Colors.white,
-                        fontWeight: FontWeight.w500),
+                        fontWeight: FontWeight.w600),
                   ))
             ]),
           ),
