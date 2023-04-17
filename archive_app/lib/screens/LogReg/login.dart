@@ -80,7 +80,7 @@ class _LoginFormState extends State<LoginForm> {
                   _email = value!;
                 },
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 50),
               TextFormField(
                 decoration: const InputDecoration(
                     prefixIcon: Icon(Icons.lock_outline),
@@ -111,6 +111,7 @@ class _LoginFormState extends State<LoginForm> {
               }
             },
           )
+          // сделай маргин
         ],
       ),
     );

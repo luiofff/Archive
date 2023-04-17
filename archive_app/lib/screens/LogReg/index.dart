@@ -27,20 +27,50 @@ class LogReg extends StatelessWidget {
             ),
           ),
           // LOG IN BUTTON
-          LogRegButton(
-              text: 'Вход',
-              callback: () {
+
+          TextButton(
+              onPressed: () {
                 Navigator.of(context).pushNamed('/login');
-              }),
+              },
+              style: TextButton.styleFrom(
+                backgroundColor: const Color(0xFF0075FF),
+                foregroundColor: Colors.white.withOpacity(0.95),
+                minimumSize: Size(MediaQuery.of(context).size.width * 0.7,
+                    MediaQuery.of(context).size.height * 0.1),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50)),
+              ),
+              child: Text(
+                "Войти",
+                style: const TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.5),
+              )),
 
           SizedBox(height: screenHeight * 0.04),
 
           // REGISTRATION BUTTON
-          LogRegButton(
-              text: 'Регистрация',
-              callback: () {
+          TextButton(
+              onPressed: () {
                 Navigator.of(context).pushNamed('/registration');
-              }),
+              },
+              style: TextButton.styleFrom(
+                backgroundColor: const Color(0xFF0075FF),
+                foregroundColor: Colors.white.withOpacity(0.95),
+                minimumSize: Size(MediaQuery.of(context).size.width * 0.7,
+                    MediaQuery.of(context).size.height * 0.1),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50),
+                    side: BorderSide(color: Colors.white70, width: 1.5)),
+              ),
+              child: const Text(
+                "Регистрация",
+                style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.8),
+              )),
         ],
       )),
     );

@@ -8,10 +8,10 @@ import 'package:archive_app/screens/order/inOffice/select_place.dart';
 import 'package:archive_app/screens/order/index.dart';
 
 final router = {
-  '/' : (context) => const Documents(),
-  '/account' : (context) => const Account(),
-  '/logreg' : (context) => const LogReg(),
-  '/login' : (context) => const Login(),
+  '/': (context) => const LogReg(),
+  '/account': (context) => const Account(),
+  '/logreg': (context) => const LogReg(),
+  '/login': (context) => const Login(),
   '/registration': (context) => const Registration(),
   '/order': (context) => const SelectOrderType(),
   '/order/byCourier': (context) => const ByCourierMap(),

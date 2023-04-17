@@ -15,12 +15,12 @@ class LogRegButton extends StatelessWidget {
           foregroundColor: Colors.white.withOpacity(0.95),
           minimumSize: Size(MediaQuery.of(context).size.width * 0.7,
               MediaQuery.of(context).size.height * 0.1),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-            side: const BorderSide(color: Colors.white70, width: 1.5),
-          ),
-          
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         ),
-        child: Text(text, style: const TextStyle(fontSize: 32, fontWeight: FontWeight.w300),));
+        child: Text(
+          text,
+          style: const TextStyle(fontSize: 32, fontWeight: FontWeight.w300),
+        ));
   }
 }

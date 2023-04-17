@@ -75,6 +75,7 @@ class _LoginFormState extends State<LoginForm> {
               _email = value!;
             },
           ),
+          const SizedBox(height: 30),
           TextFormField(
             decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.phone),
@@ -90,6 +91,7 @@ class _LoginFormState extends State<LoginForm> {
               _phoneNum = value!;
             },
           ),
+          const SizedBox(height: 30),
           TextFormField(
             decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.lock_outline),
@@ -105,6 +107,7 @@ class _LoginFormState extends State<LoginForm> {
               _password = value!;
             },
           ),
+          const SizedBox(height: 30),
           TextFormField(
             decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.lock_outline),
@@ -120,8 +123,7 @@ class _LoginFormState extends State<LoginForm> {
               _passwordRepeat = value!;
             },
           ),
-          const SizedBox(height: 40),
-          const Expanded(child: Text('')),
+          const SizedBox(height: 110),
           LogRegButton(
             text: "Вперед",
             callback: () {
