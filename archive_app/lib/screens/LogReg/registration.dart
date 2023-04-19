@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'button.dart';
+//import 'package:archive_app/screens/LogReg/sendRegInfo.dart';
+
 
 class Registration extends StatelessWidget {
   const Registration({super.key});
@@ -20,7 +22,7 @@ class Registration extends StatelessWidget {
               alignment: Alignment.centerLeft,
               children: [
                 SvgPicture.asset(
-                  'assets/reg.svg',
+                  'assets/logo.svg', // Этого здесь быть не должно, Юра вырежи!
                   fit: BoxFit.cover,
                   height: MediaQuery.of(context).size.height,
                 ),
@@ -52,7 +54,7 @@ class _LoginFormState extends State<LoginForm> {
   String _password = '';
   String _passwordRepeat = '';
 
-  @override
+    @override
   Widget build(BuildContext context) {
     return Form(
       key: _formKey,
